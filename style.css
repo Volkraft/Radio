@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&family=Tapestry&family=Water+Brush&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+input,button,textarea{
+    font-family:inherit;
+    border:none; 
+    background-color:transparent;
+    outline: none;
+}
+input::-webkit-input-placeholder {font-size:14px;}
+input::-moz-placeholder {font-size:14px;}
+input:-moz-placeholder {font-size:14px;}
+input:-ms-input-placeholder {font-size:14px;}
+textarea::-webkit-input-placeholder {font-size:14px;}
+textarea::-moz-placeholder {font-size:14px;}
+textarea:-moz-placeholder {font-size:14px;}
+textarea:-ms-input-placeholder {font-size:14px;}
+svg{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+html,
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 410px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+ol,ul{
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    padding-top: 15px;
+}
+button{
+    all: unset;
+}
+.header{
+    height: 100px;
+    background-color: #fd4949;
+    min-width: 100%;
+    position: sticky;
+    top: 0;
+    border-radius: 30px;
+    display: flex;
+    z-index: 999;
+}
+.logo{
+    background-image: url(IMG/9025A454-7DAC-4260-8139-157BB5CC0B1B.png);
+    width: 200px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+li{
+    margin-bottom: 10px;
+    color: black;
+}
+li:hover{
+    color: rgb(251, 215, 190);
+    transition: 0.5s;
+}
+.Station{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(37, 41, 251);
+    width: 170px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 500ms;
+    background-color: #fff;
+}
+.News{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.Shanson{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.Sport{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.Rock{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.jazz{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.Popular{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.Retro{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.Classic{
+    text-align: center;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 15px;
+}
+.News-rows-one{
+    margin-top: 15px;
+}
+.News-rows-two{
+    margin-top: 15px;
+}
+.hr-footer{
+    margin-top: 70px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	box-shadow: 0 20px 20px -20px #000000;
+	width: 95%;
+}
+hr{
+    margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #fd4949;
+	box-shadow: 0 20px 20px -20px #fd4949;
+	width: 95%;
+}
+/* первый вариант .wrapper-network{
+}
+.footer-info{
+    display: flex;
+}
+.network{
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+}
+.telegram{
+    background-image: url(../РАДИО/Project/IMG/telegram.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+#telegram{
+    border: none;
+}
+.twitter{
+    background-image: url(../РАДИО/Project/IMG/twitter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.vkontakte{
+    background-image: url(../РАДИО/Project/IMG/vkontakte.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+} */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+
+}
+.footer__kontakts{
+    width: 50%;
+}
+.footer__network{
+    display: flex;
+    width: 45%;
+}
+.kontakts-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.network-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social:hover{
+    transform: scale(1.1,1.1);
+}
+.telegram{
+    background-image: url(IMG/telegram.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+#telegram{
+    border: none;
+}
+.twitter{
+    background-image: url(IMG/twitter.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.vkontakte{
+    background-image: url(IMG/vk.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.Station img{
+    width: 100%;
+    margin-top: 6%;
+    border-bottom: 1px dashed rgba(58, 58, 58, 0.5);
+}
+.Station:hover{
+    color: #fd4949;
+    transform: scale(1.1, 1.1);
+    transition: 500ms;
+}
+.test{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+}
+.button{
+    padding: 0;
+    margin-bottom: 10px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: rgba(37, 40, 251, 0.298);
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    border-radius: 5px;
+    height: 60px;
+    width: 170px;
+    padding: 10px;
+    background-size: contain;
+    transition: 500ms;
+}   
+.button:hover{
+    background-color: rgba(37, 40, 251, 0.438);
+    transition: 500ms;
+    box-shadow: 0px 0px 5px;
+}
+.button:active{
+    transform: scale(0.9, 0.9);
+}
+.mode{
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.sun{
+
+}
+.sun-icon{
+    fill: yellow;
+}
+.hidden{
+    display: none;
+}
+/* Ночный режим */
+
+/* Ночной режим для боди*/
+.night{
+    background-color: #272727;
+    color: azure;
+}
+/* Ночной режим для хедера */
+.night header{
+    background-color: #3b3b3b;
+}
+
+/* -- */
+
+
+
+
+
+/* Форма тех поддержки */
+    .shadow-block-form{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0; top: 0; right: 0; bottom: 0;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 1000;
+        transition: 500ms;
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+    }
+    .wrapper-form{
+        position: relative;
+        margin-top: 10%;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 450px;
+        width: 350px;
+        border-radius: 10px;
+        background-color: rgba(37, 40, 251, 0.252) ;
+    }
+    .form Fback{
+        height: 500px;
+    }
+    .form-item{
+        margin-top: 10px;
+    }
+    .form-item label{
+        display: block;
+    }
+    .input-form{
+        display: block;
+        background-color: #ffffff;
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 0 5px 0 5px;
+        font-family: inherit;
+        font-weight: 600;
+        transition: 200ms;
+        margin: 0 auto;
+    }
+    .input-form:hover{
+        box-shadow: 0px 0px 5px 3px #fff;
+        transition: 200ms;
+    }
+    .input-form:focus{
+        border: rgba(120, 122, 255, 0.912) 1px solid;
+        transition: 200ms;
+
+    }
+    .hidden{
+        visibility:hidden;
+        opacity:0;
+        transition: 500ms;
+    }
+    .hidden-player{
+        display: none;
+        color: azure;
+    }
+    
+    .sogl{
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    .fake-box{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: #fd4949 2px solid;
+        position: relative;
+        vertical-align:middle;
+        cursor: pointer;
+    }
+    .fake-box::before{
+        content: '';
+        background-image: url(IMG/Tick_Mark_icon-icons.com_69146.svg);
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        top:50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    .sogl:checked + .fake-box::before{
+        transform: translate(-50%, -50%) scale(1);
+        transition: 200ms;
+    }
+    .agr{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .personal_date{
+        color: rgba(255, 255, 255, 0.801);
+    }
+    .send-form{
+        background-color: #fd4949;
+        height: 30px;
+        width: 200px;
+        border: none;
+        box-shadow: 0px 0px 5px #fd4949;
+        transition: 1000ms;
+        margin-top: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .send-form:hover{
+        transition: 1000ms;
+        transform: scale(1.1);
+        font-size: 15px;
+        background-color: #fd4949;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    .feedback-text{
+        resize: none;
+        background-color: #ffffff;
+        width: 300px;
+        height: 100px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 3px;
+    }
+    .close-form{
+        width:30px;
+        height:30px;
+        position:absolute;
+        top:0;
+        right:0;
+        background-image: url(IMG/close-svgrepo-com.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 500ms;
+    }
+    .close-form:hover{
+        transform: rotate(180deg);
+        transition: 500ms;
+    }
+
+
+
+/* мобильный адаптив */
+@media all and (max-width: 900px) {
+    .wrapper-form{
+        top: 20%;
+    }
+    .night-mode{
+        left: 75%;
+    }
+    .nav{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0; top: 0; right: 0; bottom: 0;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.526);
+        z-index: 2;
+        transition: 1000ms;
+        transform: scale(0);
+        font-size: 20px;
+    }
+    .nav.active{
+            visibility: visible;
+            transition: 1000ms;
+            transform: scale(1);
+    }
+    .nav li{
+        color: rgb(255, 244, 244);
+    }
+    ol,ul{
+        padding: 0px;
+        padding-top: 0px;
+    }
+    .header{
+        position: relative;
+    }
+
+    /* Бургер */
+    .wrapper-burger{
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        z-index: 10;
+    }
+    .burger{
+        border: 3px solid black;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    .burger:hover{
+        box-shadow: 0px 0px 5px;
+    }
+    .burger__line{
+        margin: 6px auto 0;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: 500ms;
+    }
+    .burger:hover .burger__line{
+        box-shadow: 0px 0px 2px white;
+    }
+    .burger.active .burger__line:first-child{
+        transform: rotate(-45deg) translate(-6px, 7px);
+        transition: 500ms;
+    }
+    .burger.active .burger__line:nth-child(2) {
+        background: transparent;
+        width: 0px;
+        box-shadow: none;
+        transition: 500ms;
+    }
+    .burger.active .burger__line:last-child{
+        transform: rotate(45deg) translate(-5px,-6px);
+        transition: 500ms;
+    }
+    /* -- */
+
+    /* Ночный режим */
+    .night-mode{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 10%;
+        top: -5px;
+        z-index: 10;
+    }
+    /* -- */
+    .Station{
+        margin: 10px auto;
+        width: 180px;
+        height: 180px;
+    }
+    .row{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .wrapper-station{
+        width: 50%;
+    }
+    html,
+body{
+    font-size: 14px;
+    margin: 0 auto;
+}
+    .header{
+        position: sticky;
+    }
+}
+@media all and (max-width: 800px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .kontakts-title{
+        margin-left: 30%;
+        margin-bottom: 5px;
+    }
+    .social-title{
+        width: 190px;
+        text-align: center;
+    }
+}
